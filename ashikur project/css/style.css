@@ -1,0 +1,127 @@
+/* css variable */
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+  }
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1114px;
+    margin: auto;
+}
+body{
+    font-family: #353535;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+/* header css start */
+.logo{
+    width: 30%;
+}
+.menu{
+    width: 70%;
+    text-align: center;    
+
+}
+
+.logo{
+    text-align: center;
+}
+.menu{
+    margin-left: auto;
+    
+}
+.menu ul li {
+    display: inline-block;
+}
+nav .menu ul li a{
+ padding: 18px 22px 5px;
+ display: block;   
+font-weight: 500;
+font-size: 15px;
+line-height: 200%;
+color: #353535;
+position: relative;
+transition: 0.35s;
+}
+nav .menu ul li a::before{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #353535;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+nav .menu ul li .active::before,
+nav .menu ul li:hover a::before{
+    width: 100%;
+}
+/* header css end */
+/* banner section css start */
+#banner{
+    padding: 56px 0px 155px;
+}
+.bannercnt{
+    width: 53%;
+}
+.image{
+    width: 47%;
+}
+h4{
+    
+font-weight: 400;
+font-size: 24px;
+color: #353535;
+}
+h1{
+
+font-weight: 700;
+font-size: 64px;
+color: #353535;
+margin: 15px 0px 25px;
+}
+p{
+    
+font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+color: #353535;
+}
+.btn{
+    border-radius: 20px;
+padding: 16px 45px;
+display: inline-block;
+background: #fc0;
+font-weight: 600;
+font-size: 20px;
+line-height: 180%;
+color: #fff;
+}
+.btn2{
+    border-radius: 20px;
+    padding: 16px 45px;
+    display: inline-block;
+    border: 1px solid #000;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #353535;
+}
+/* banner section css ends */
